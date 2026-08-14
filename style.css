@@ -22,7 +22,7 @@ body{
 
 .btn-calc{
     padding: 20px;
-    background-color: #3d3d5c;
+    background-color: #0606f1;
     font-size: 1.25rem;
     border: none;
     border-radius: 8px;
@@ -31,7 +31,7 @@ body{
 }
 
 .btn-calc:hover{
-    background-color: #4d4d70;
+    background-color: #704d56;
 }
 
 .input{
@@ -44,11 +44,11 @@ body{
 }
 
 .btn-action{
-    background-color: #555577;
+    background-color: #0c5223;
 }
 
 .btn-action:hover{
-    background-color: #666688;
+    background-color: #146185;
 }
 
 .btn-zero{
@@ -56,7 +56,7 @@ body{
 }
 
 .btn-operator, .btn-equals{
-    background-color: #ffa500;
+    background-color: #080935;
 }
 
 .btn-operator:hover, .btn-equals:hover{
