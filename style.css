@@ -16,13 +16,13 @@ body{
     padding: 20px;
     text-align: right;
     color: black;
-    background-color: black;
+    background-color: rgb(233, 19, 108);
     border-radius: 20px;
 }
 
 .btn-calc{
     padding: 20px;
-    background-color: #0606f1;
+    background-color: #2f2ff3;
     font-size: 1.25rem;
     border: none;
     border-radius: 8px;
@@ -31,7 +31,7 @@ body{
 }
 
 .btn-calc:hover{
-    background-color: #704d56;
+    background-color: #fc98b1;
 }
 
 .input{
@@ -44,11 +44,11 @@ body{
 }
 
 .btn-action{
-    background-color: #0c5223;
+    background-color: #04dd4d;
 }
 
 .btn-action:hover{
-    background-color: #146185;
+    background-color: #06a9f5;
 }
 
 .btn-zero{
@@ -56,9 +56,9 @@ body{
 }
 
 .btn-operator, .btn-equals{
-    background-color: #080935;
+    background-color: #8c8df5;
 }
 
 .btn-operator:hover, .btn-equals:hover{
-    background-color: #ffa070;
+    background-color: #f7b594;
 }
