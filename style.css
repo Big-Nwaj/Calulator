@@ -68,6 +68,8 @@ body{
         width: 95%;
         max-width: 350px;
         padding: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .btn-calc {
