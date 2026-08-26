@@ -99,16 +99,25 @@ function evaluate(){
     let secondNumber = display.textContent;
     let result = operate(currentOperator, firstNumber, secondNumber);
     display.textContent = result;
+    history.textContent = `${firstNumber} ${currentOperator} ${secondNumber} = ${result}`;
+
+    firstNumber = result; 
     currentOperator = null;
+    resetScreen = true; 
 }
 
+const history = document.getElementById("history");
+console.log(history); 
+
 const clear = document.querySelector('[data-action="clear"]');
-clear.addEventListener("click",() => {
+clear.addEventListener("click", () => {
     resetScreen = false;
     display.textContent = "0";
     firstNumber = "";
     currentOperator = null;
+    history.textContent = ""; 
 });
+
 
 const deleteBtn = document.querySelector('[data-action="delete"]');
 deleteBtn.addEventListener("click",() => {
