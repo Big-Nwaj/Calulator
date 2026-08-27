@@ -98,16 +98,25 @@ function evaluate(){
     }
     let secondNumber = display.textContent;
     let result = operate(currentOperator, firstNumber, secondNumber);
+    addToHistory(firstNumber, currentOperator, secondNumber, result);
     display.textContent = result;
-    history.textContent = `${firstNumber} ${currentOperator} ${secondNumber} = ${result}`;
-
-    firstNumber = result; 
     currentOperator = null;
-    resetScreen = true; 
 }
 
 const history = document.getElementById("history");
 console.log(history); 
+
+function addToHistory(first, operator, second, result){
+    const symbols = {
+        add:"+",
+        subtract:"-",
+        multiply:"x",
+        divide:"/"
+    };
+    const entry = document.createElement("p");
+    entry.textContent = first + " " + symbols [operator] + " " + second + " = " + result;
+    history.prepend (entry);
+}
 
 const clear = document.querySelector('[data-action="clear"]');
 clear.addEventListener("click", () => {

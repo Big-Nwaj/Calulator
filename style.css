@@ -76,13 +76,23 @@ body{
         padding: 15px;
         font-size: 1.1rem;
     }
-
-    .history {
-        max-height: 100px;
-        font-size: 0.8rem;
-    }
 }
 
-#history{
-    margin-top: 100px;
+.history {
+        max-height: 150px;
+        font-size: 0.9rem;
+        text-align: right;
+        color: #808080;
+        margin-top: 20px;
+        overflow-y: auto;
+    }
+
+.history p {
+    margin: 6px 0;
+    color: #808080;
+}
+
+.history p:hover{
+    margin: 6px 0;
+    color: #ffffff;
 }
